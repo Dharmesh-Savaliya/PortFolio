@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg-light {
+    background-color: #777479!important;
+    color: white;
+    cursor: pointer;
+}
+
+.left-panel {
+    background-color: rgb(204, 200, 200);
+    height: 642px;
+}
+
+.w25 {
+    max-width: 25%;
+}
+
+.w75 {
+    max-width: 75;
+}

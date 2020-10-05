@@ -1,0 +1,34 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .top-left {
+    position: absolute;
+    color: white;
+    top: 18px;
+    font-size: 36px;
+    left: 35%;
+    font-style: italic;
+    font-family: time;
+    font-weight: 12px;
+  }
+
+.bottom-left {
+    position: absolute;
+    color: white;
+    bottom: 18px;
+    font-size: 36px;
+    left: 35%;
+    font-style: italic;
+    font-family: time;
+    font-weight: 12px;
+}
+  
