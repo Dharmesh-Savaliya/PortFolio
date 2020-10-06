@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DetailsService } from 'src/app/core/models/services/details.service';
+import { DetailsService } from 'src/app/core/services/details.service';
+import { Details } from 'src/app/core/models/details'
 
 @Component({
   selector: 'app-personal',
@@ -12,12 +13,18 @@ export class PersonalComponent implements OnInit {
     private detailSvc : DetailsService
   ) { }
 
-  public personalDetails : any = {};
+  public personalDetails: any = {};
+  public languageList: any = ['English' , 'Hindi' , 'Gujarati' , 'Marathi']
 
   ngOnInit() {
-    // document.getElementsByClassName('.text_wrapper').class.add.('show')
-    this.personalDetails = this.detailSvc.getPersonalDetails();
-    console.log(this.personalDetails);
+    const personalDetails = this.detailSvc.getPersonalDetails();
+    this.setPersonDetails(personalDetails);
+  }
+
+ // Check the type of personal details using interface 
+
+  setPersonDetails(personDetails: Details) {
+    this.personalDetails = personDetails;
   }
 
 }

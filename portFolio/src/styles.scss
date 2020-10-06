@@ -1,24 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
-    height: 100%;
     margin: 0;
-  }
-
-.bg-light {
-    background-color: #777479!important;
-    color: white;
-    cursor: pointer;
+    font-family:  Times;
 }
 
 .left-panel {
-    background-color: rgb(204, 200, 200);
-    height: 642px;
+    background-color: lavender;
+    height: calc(100vh - 19px);
 }
 
-.w25 {
-    max-width: 25%;
+.card-data {
+    box-shadow: 8px 8px 8px gainsboro;
+    margin: 10px 0 0;
+    padding: 0px 15px 15px 15px;
+    border-radius: 4px;
 }
 
-.w75 {
-    max-width: 75;
+.table {
+  float: left;
+  width: 1000px;
+  overflow-y: auto;
+  height: calc(100vh - 19px);
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #777479;
+    color: white;
+    text-align: center;
+}
+
+
+.paddr {
+    padding-right: 10px;
+    padding-left: 10px;
 }

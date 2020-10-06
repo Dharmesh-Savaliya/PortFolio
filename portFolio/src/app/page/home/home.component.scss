@@ -1,34 +1,50 @@
 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Bottom left text */
-  .top-left {
-    position: absolute;
-    color: white;
-    top: 18px;
-    font-size: 36px;
-    left: 35%;
-    font-style: italic;
-    font-family: time;
-    font-weight: 12px;
-  }
+.top-left {
+  position: absolute;
+  color: white;
+  top: 18px;
+  font-size: 36px;
+  left: 35%;
+  font-style: italic;
+  font-family: time;
+  font-weight: 12px;
+}
 
 .bottom-left {
-    position: absolute;
-    color: white;
-    bottom: 18px;
-    font-size: 36px;
-    left: 35%;
-    font-style: italic;
-    font-family: time;
-    font-weight: 12px;
+  position: absolute;
+  color: white;
+  bottom: 18px;
+  font-size: 36px;
+  left: 35%;
+  font-style: italic;
+  font-family: time;
+  font-weight: 12px;
 }
-  
+
+.typewriter {
+  color: #fff;
+  font-family: times;
+  overflow: hidden;
+  border-right: .10em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .10em;
+  animation:
+    typing 4.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 40%
+  }
+}

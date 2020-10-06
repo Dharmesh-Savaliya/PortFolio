@@ -8,19 +8,24 @@ import { PersonalComponent } from './page/personal/personal.component';
 import { ProfessionalComponent } from './page/professional/professional.component';
 import { HomeComponent } from './page/home/home.component';
 import { CoreModule } from './core/core.module';
-
+import { EducationComponent } from './page/education/education.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     PersonalComponent,
     ProfessionalComponent,
     HomeComponent,
+    EducationComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
+    RouterModule,
+    BrowserAnimationsModule,
     SharedModule,
     CoreModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
