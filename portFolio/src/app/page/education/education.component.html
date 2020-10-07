@@ -1,0 +1,31 @@
+<div id="publication" class="card card-data">
+  <div>
+    <h3>Publication</h3>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      02/02/2017
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+      PDF to Excel Converter & Manipulator for Result Analysis in College Environment, International Journal of Advanced
+      Research
+      in Computer and Communication Engineering
+    </div>
+  </div>
+</div>
+<div class="card card-data">
+  <div>
+    <h3>Education</h3>
+  </div>
+  <div class="row" *ngFor='let data of educationDetails'>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      {{data.year}}
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+      <h4>{{data.college}}</h4>
+      <span>{{data.qualification}}</span><br />
+      <span>{{data.univercity}}</span><br />
+      <span>{{data.city}}</span> <br />
+    </div>
+  </div>
+</div>

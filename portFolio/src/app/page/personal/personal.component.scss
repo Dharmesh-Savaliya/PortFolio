@@ -1,0 +1,19 @@
+
+
+.text_wrapper {
+    position: relative;
+    left: -100%;
+    min-width:220px;
+    width:270;
+    height:33px;
+    z-index:10;
+    margin-left:auto;
+    margin-right:auto;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+}
+.text_wrapper.show{
+   left: 0;
+}

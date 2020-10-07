@@ -1,0 +1,121 @@
+<div class="table">
+  <div id="profile" class="card card-data">
+    <div>
+      <h3>Profile</h3>
+    </div>
+    <div @fade>
+      BE Graduate | 3 years of experience in Software Development | Sound understanding of Angular, JavaScript, .Net,
+      Database, and SQL Queries | Capable of Requirement Gathering, Analysis, Documentation, Development and
+      Deployment.
+    </div>
+  </div>
+  <div id="skillList" class="card card-data">
+    <div>
+      <h3>Skills</h3>
+    </div>
+    <div class="row" @fade>
+      <div class="paddr" *ngFor='let data of skillList'>
+        <span class="tool">{{data}}</span>
+      </div>
+    </div>
+  </div>
+  <div id="toolList" class="card card-data">
+    <div>
+      <h3>Tools</h3>
+    </div>
+    <div class="row" @fade>
+      <div class="paddr" *ngFor='let data of toolList'>
+        <span class="tool">{{data}}</span>
+      </div>
+    </div>
+  </div>
+  <div id="experience" class="row card card-data">
+    <div>
+      <h3>Experience</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <h4>{{'08/2017 – Present'}}</h4>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9" @fade>
+        <h5>SRKay Consulting Group, Software Developer</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h4>Requirements:</h4>
+        <span *ngFor='let data of companyRequirement;let i = index'>
+          <div class="row" @fade>
+            <div class="col-1">
+              {{i + 1}}
+            </div>
+            <div class="col-11">
+              {{data}}
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="col-6">
+        <h4>Duties & Responsibilities:</h4>
+        <span *ngFor='let data of companyRoleResp;let i = index'>
+          <div class="row" @fade>
+            <div class="col-1">
+              {{i + 1}}
+            </div>
+            <div class="col-11">
+              {{data}}
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="project" class="row card card-data">
+    <div>
+      <h3>Project</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <h4>{{'08/2017 – Present'}}</h4>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+        <h4>SRK One, Diamond selling websites</h4>
+        <span>
+          Export Pvt. Ltd. which empowered the clients to explore, review and purchase the diamonds. It is display the
+          all
+          information about the diamonds and as well as visual files likes images, videos, plotter etc.
+        </span>
+        <h5>Responsibilities:</h5>
+        <span *ngFor='let data of srkProjectResp;let i = index'>
+          <div class="row">
+            <div class="col-1">
+              {{i + 1}}
+            </div>
+            <div class="col-11">
+              {{data}}
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <h4>{{'07/2017 – 06/2018'}}</h4>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+        <h4>Narola Gems, Diamond selling websites</h4>
+        <h5>Responsibilities:</h5>
+        <span *ngFor='let data of narolaProjectResp;let i = index'>
+          <div class="row">
+            <div class="col-1">
+              {{i + 1}}
+            </div>
+            <div class="col-11">
+              {{data}}
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
